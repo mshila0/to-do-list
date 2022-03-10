@@ -2,19 +2,20 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Список дел</title>
 </head>
 <body>
-<h1>Список дел</h1>
-<form>
-    <input type="text" value="Новый элемент списка"/>
+<div>
+    <h1>Список дел</h1>
+    <input id="mainInput" type="text" value="Введите новое дело">
     <button>Создать</button>
-</form>
+</div>
 
 <ul>
-    <li><input type="checkbox" />Съесть пончик &#10060</li>
-    <li><input type="checkbox" />Погладить кота &#10060</li>
-    <li><input type="checkbox" />Покрасить стол &#10060</li>
+    <li ><input type="checkbox" />Съесть пончик</li>
+    <li class = "checked"><input type="checkbox" />Погладить кота</li>
+    <li class = "checked"><input type="checkbox" />Покрасить стол </li>
 </ul>
 </body>
 </html>
