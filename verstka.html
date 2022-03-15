@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="kod.js"></script>
     <title>Список дел</title>
 </head>
 <body>
 <div>
     <h1>Список дел</h1>
-    <input id="mainInput" type="text" value="Введите новое дело">
-    <button>Создать</button>
+    <input id="mainInput" type="text" placeholder="Введите новое дело">
+    <button onclick="newElement()" class="addBtn">Создать</button>
 </div>
 
-<ul>
-    <li ><input type="checkbox" />Съесть пончик</li>
-    <li class = "checked"><input type="checkbox" />Погладить кота</li>
-    <li class = "checked"><input type="checkbox" />Покрасить стол </li>
+<ul id="mainUL">
+    <li>Съесть пончик</li>
+    <li class = "checked">Погладить кота</li>
 </ul>
 </body>
 </html>

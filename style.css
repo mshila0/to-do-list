@@ -58,6 +58,12 @@ ul li {
     background: #eee;
     font-size: 24px;
     transition: 0.2s;
+
+    /* сделайте элементы списка невыбираемыми */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Установить все нечетные элементы списка в другой цвет (зебра) */
@@ -65,6 +71,7 @@ ul li:nth-child(odd) {
     background: #DCDCDC;
 }
 
+/* Голубой цвет при наведении */
 ul li:hover {
     background: #A6CAF0;
 }
@@ -92,9 +99,8 @@ ul li.checked::before {
 
 /* Стиль кнопки "Закрыть" */
 .close {
-    position: absolute;
-    right: 0;
-    top: 0;
+    left: 20px;
+    position: relative;
     padding: 12px 16px 12px 16px;
 }
 
